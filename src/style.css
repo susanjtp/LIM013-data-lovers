@@ -1,0 +1,95 @@
+.contenedor {
+    width: 100% ;
+    height: 100px;
+    background-color: rgb(223, 30, 30);
+    max-width: 2800px;
+    margin: 0% auto;
+  
+    
+  
+  }
+  
+  header {
+    width: 100%;
+    height: 200px;
+    background: url("pokemones.jpg") center 30%;
+    background-size: 120%;
+  }
+  main {
+    width: 100%;
+    
+  }
+  footer {
+    width: 100%;
+    height: 10%;
+  }
+  .tarjeta {
+    width: 50px;
+    height: 70px;
+    background: yellow;
+  
+  }
+  
+  #logo{
+  width: 90%;
+  }
+  
+  #boton{
+    height: 200px;
+    width: 100%;
+    flex: content;
+    
+  }
+  
+  #menu{
+    width: 10%;
+  }
+   
+  
+  @media screen and (max-width: 1050px){
+    header {
+    
+    height: 160px;
+    background-size: 130%;
+  }
+  #boton{
+    height: 160px;
+  }
+  }
+  
+  @media screen and (max-width: 800px){
+  
+   header {
+    
+    height: 120px;
+    background-size: 130%;
+  }
+  #boton{
+    height: 120px;
+  }
+   
+  }
+  @media screen and (max-width: 600px){
+  
+   header {
+    height: 100px;
+    background-size: 150%;
+  
+  }
+   #boton{
+    height: 100px;
+  }
+  
+  }
+  
+  @media screen and (max-width: 400px){
+    header {
+    height: 70px;
+    background-size: 140%;
+  }
+    #boton{
+    height: 70px;
+  }
+  
+    
+  }
