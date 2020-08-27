@@ -1,51 +1,43 @@
-.contenedor {
-    width: 100% ;
-    height: 100px;
-    background-color: rgb(223, 30, 30);
-    max-width: 2800px;
-    margin: 0% auto;
+
+.contenedor{
+  width: 100%;
+  background-image: url("imagenes/pokemones.jpg/") ;
+  background-attachment: fixed;
+  height: 1600px;
+  background-size: 400%;
+  background-position: center; 
+ 
+}
+/* diseño de encabezado */
+.encabezado{
+  width: 100%;
+  background-color: #77b7cbce ;
+  display: flex;
+  height: 150px;
+
   
-    
+}
+.logo{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
+}
+.superior{
+  width: 80%;
+}
+#encabezado{
+
+}
+
+#logo{
+  width: 75%;
   }
+
+
   
-  header {
-    width: 100%;
-    height: 200px;
-    background: url("pokemones.jpg") center 30%;
-    background-size: 120%;
-  }
-  main {
-    width: 100%;
-    
-  }
-  footer {
-    width: 100%;
-    height: 10%;
-  }
-  .tarjeta {
-    width: 50px;
-    height: 70px;
-    background: yellow;
-  
-  }
-  
-  #logo{
-  width: 90%;
-  }
-  
-  #boton{
-    height: 200px;
-    width: 100%;
-    flex: content;
-    
-  }
-  
-  #menu{
-    width: 10%;
-  }
-   
-  
+/* diseño de responsive
   @media screen and (max-width: 1050px){
     header {
     
@@ -92,4 +84,5 @@
   }
   
     
-  }
+  } 
+   */
