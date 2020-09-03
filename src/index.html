@@ -31,9 +31,10 @@
               </div>
             </div>
             <div class="buscador">
-              <input type="search" id="botondebusqueda" placeholder="Busca tu pokemon"><i class="fa fa-search"
+              <input type="search" id="imputbusqueda" placeholder="Busca tu pokemon" src="data"><i class="fa fa-search"
                 aria-hidden="true"></i></input>
-              <button type="submit" id="comenzarbusqueda">Buscar</button>
+              <button type="submit" id="buttonbusqueda">Buscar</button>
+
             </div>
           </div>
         </div>
@@ -43,7 +44,7 @@
       <section class="filters">
         <select  class="filter select">
           <option value="" disabled selected>Tipo</option>
-          <option value="all-types" >Todos los pokemones</option>
+          <option value="type" >Todos los pokemones</option>
           <option value="bug">Bicho</option>
           <option value="dark">Siniestro</option>
           <option value="dragon">Dragon</option>
@@ -98,6 +99,7 @@
     </main>
 
     <div class="root" id="root"></div>
+    <div class="resultado" id="resultado"></div>
     <footer>
 
     </footer>

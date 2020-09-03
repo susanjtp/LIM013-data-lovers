@@ -1,9 +1,9 @@
 
 .contenedor{
   width: 100%;
-  background-image: url("imagenes/pokemones.jpg/") ;
+  background-image: url("imagenes/pokemones.jpg/");
   background-attachment: fixed;
-  height: 5000px;
+  min-height: 1000px;
   background-size: 400%;
   background-position: center; 
  
@@ -44,7 +44,7 @@
 .tarjeta{
   width: 300px;
   height: 250px;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: rgba(255, 255, 255, 0.959);
   display: flex;
   margin: 1% 1% 3%;
   flex-direction: column;
@@ -68,6 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  box-sizing: content-box ;
 
 }
 .datosprincipales{
@@ -86,10 +87,8 @@
 
 /*id de superior*/
 #imagenpokemon{
+    width: 90%;
   
-  border-radius: 50%;
-  background-color: #ffffff;
-  width: 90%;
   
 }
 
