@@ -4,6 +4,23 @@ import data from './data/pokemon/pokemon.js';
 import example from './data.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 //console.log(example, data);
+
+const botonhome = document.getElementById("homeboton");
+const overlay = document.getElementById("overlay");
+const homeh = document.getElementById("home");
+const cerrarh = document.getElementById("cerrarhome");
+
+botonhome.addEventListener("click", function () {
+    overlay.classList.add("active");
+    homeh.classList.add("active");  //classList añade una clase en este caso active que hace que se muestre el home
+});
+cerrarh.addEventListener("click", function () {
+    overlay.classList.remove("active");
+    homeh.classList.remove("active"); //classList  con remove , quita la opcione de active
+});
+
+
+//-----------------------
 const root = document.getElementById("root")
 const inicio = () => {
     const datainicial = data.pokemon;
@@ -17,7 +34,7 @@ select.addEventListener("change", () => {
     //console.log(select.value)
     if (select.value === "all-types") {
         const dat = data.pokemon
-      //  console.log(dat);
+        //  console.log(dat);
         root.innerHTML = dat.map(example).join("")
     }
     else {
@@ -65,36 +82,67 @@ imputbusqueda.addEventListener("keyup", filtrar)  // lo utilizo si quiero que ap
 const cualidades = document.querySelector("#cualidades");
 cualidades.addEventListener("change", () => {
     console.log(cualidades.value)
-       
-                const fuerza = data.pokemon
-                data.pokemon === "base-attack"
 
-                fuerza.sort(function (a,b){
-                    if(a.value >b.value ){
-                        return 1
-                    }
-                    if(a.value < b.value){
-                        return -1
-                    }
-                });
-                console.log(fuerza)
-            
-    }
-    )
-    
-    
+    const fuerza = data.pokemon
+    data.pokemon === "base-attack"
 
-   // const ataque= data.pokemon.filter((character) => {
-        
-      //  return character.stats["base-attack"]
+    fuerza.sort(function (a, b) {
+        if (a.value > b.value) {
+            return 1
+        }
+        if (a.value < b.value) {
+            return -1
+        }
+    });
+    console.log(fuerza)
+
+}
+)
 
 
-    //})
-    
+
+// const ataque= data.pokemon.filter((character) => {
+
+//  return character.stats["base-attack"]
 
 
-  
+//})
 
+
+
+
+const botonmasinfo = document.querySelectorAll(".masinfo");
+const infopokemon = document.querySelector(".masinfopokemon");
+const inftarje = document.querySelector(".infotarjeta");
+
+console.log(botonmasinfo)
+
+for (let i = 0; i < botonmasinfo.length; i++) {
+    botonmasinfo[i].addEventListener("click", () => {
+        infopokemon.classList.add("active");
+        inftarje.classList.add("active");
+    });
+
+}
+
+
+
+    // infopokemon.addEventListener("click", () => {   
+    //infopokemon.classList.remove("active");
+    //inftarje.classList.remove("active"); //classList  con remove , quita la opcione de active
+    //}); 
+
+
+
+
+
+
+
+
+      //const mas = ()=>{
+
+//}
+    //botonmasinfo.addEventListener("click",mas)
 
 
 
@@ -106,3 +154,6 @@ cualidades.addEventListener("change", () => {
  //que hace include
  //que hace map
  //que hace join
+
+
+
