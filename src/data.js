@@ -31,6 +31,9 @@ const example = (datos) => {
            <div class="dato"> Salud </div>
            <div class="valor"> ${Object.values(datos.stats)[2]} </div>
         </div>
+        <div class="buttonmas">
+           <button type="submit" class="masinfo">+</button>
+        </div>
       </div>
     </div>
   `
