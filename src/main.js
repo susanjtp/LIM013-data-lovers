@@ -48,7 +48,7 @@ select.addEventListener("change", () => {
 
 const pokemones = data.pokemon;
 const imputbusqueda = document.querySelector("#imputbusqueda");
-const boton = document.querySelector("#buttonbusqueda");
+//const boton = document.querySelector("#buttonbusqueda");
 
 const filtrar = () => {
     const buscar = pokemones.filter((character) => {
@@ -57,7 +57,7 @@ const filtrar = () => {
     })
     root.innerHTML = buscar.map(example).join(" ")
 }
-boton.addEventListener("click", filtrar)
+//boton.addEventListener("click", filtrar)
 imputbusqueda.addEventListener("keyup", filtrar)  // lo utilizo si quiero que aparescan los pokemones y se valla filtrando mientras busco el pokemon
 //filtrar();
 
@@ -68,6 +68,7 @@ cualidades.addEventListener("change", () => {
        
                 const fuerza = data.pokemon
                 data.pokemon === "base-attack"
+
                 fuerza.sort(function (a,b){
                     if(a.value >b.value ){
                         return 1
