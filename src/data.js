@@ -32,9 +32,14 @@ const example = (datos) => {
            <div class="valor"> ${Object.values(datos.stats)[2]} </div>
         </div>
         <div class="buttonmas">
-           <button type="submit" class="masinfo">+</button>
+           <button type="submit" class="masinfo" >+</button>
         </div>
+    
       </div>
+    </div>
+    <div class="masinfopokemon" id="masinfopokemon-${datos.num}">
+        <div class="infotarjeta"  > ${datos.name} ,${Object.values(datos.stats)[2]} 
+        </div>
     </div>
   `
 };
